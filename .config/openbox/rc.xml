@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_config xmlns="http://openbox.org/3.4/rc"
+		xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<desktops>
+  <number>1</number>
+</desktops>
+
+<keyboard>
+  <keybind key="A-q">
+    <action name="Close"/>
+  </keybind>
+  <keybind key="A-Tab">
+    <action name="PreviousWindow">
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+	<keybind key="A-t">
+    <action name="Execute">
+      <command>alacritty</command>
+    </action>
+  </keybind>
+	<keybind key="A-e">
+    <action name="Execute">
+			<command>code</command>
+    </action>
+  </keybind>
+  <keybind key="A-w">
+    <action name="Execute">
+      <command>chromium</command>
+    </action>
+  </keybind>
+  <keybind key="Print">
+    <action name="Execute">
+      <command>scrot -s</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioRaiseVolume">
+    <action name="Execute">
+      <command>amixer set Master 5%+</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioLowerVolume">
+    <action name="Execute">
+      <command>amixer set Master 5%-</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioMute">
+    <action name="Execute">
+      <command>amixer set Master toggle</command>
+    </action>
+  </keybind>
+
+  <keybind key="A-Right">
+    <action name="GrowToEdgeEast"/>
+  </keybind>
+  <keybind key="A-Left">
+    <action name="GrowToEdgeWest"/>
+  </keybind>
+  
+</keyboard>
+
+<applications>	
+  <application name="*">
+    <decor>no</decor>
+    <maximized>vertical</maximized>
+	</application>
+</applications>
+
+</openbox_config>

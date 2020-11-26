@@ -1,0 +1,20 @@
+{
+	"files.autoSave": "afterDelay",
+	"editor.fontFamily": "'Liberation Mono'",
+	"editor.tabSize": 2,
+	"window.customMenuBarAltFocus": false,
+	"window.menuBarVisibility": "hidden",
+	"workbench.statusBar.visible": false,
+	"workbench.activityBar.visible": false,
+	"workbench.colorTheme": "Default Light+",
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.singleQuote": true,
+	"window.zoomLevel": 0,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.wordWrap": "on"
+}

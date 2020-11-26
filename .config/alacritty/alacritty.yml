@@ -1,0 +1,36 @@
+font:
+  normal:
+    family: Liberation Mono
+    style: Regular
+  bold:
+    family: Liberation Mono
+    style: Regular
+
+  size: 9
+
+colors:
+  primary:
+    background: '#ffffff'
+    foreground: '#333333'
+
+  normal:
+    black: '#333333'
+    red: '#800000'
+    green: '#008000'
+    yellow: '#808000'
+    blue: '#000080'
+    magenta: '#800080'
+    cyan: '#008080'
+    white: '#dddddd'
+
+  bright:
+    black: '#555555'
+    red: '#800000'
+    green: '#008000'
+    yellow: '#808000'
+    blue: '#000080'
+    magenta: '#800080'
+    cyan: '#008080'
+    white: '#ffffff'
+
+live_config_reload: true
