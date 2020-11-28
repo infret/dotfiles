@@ -24,7 +24,7 @@ colors:
     white: '#dddddd'
 
   bright:
-    black: '#555555'
+    black: '#dddddd'
     red: '#800000'
     green: '#008000'
     yellow: '#808000'
@@ -32,5 +32,13 @@ colors:
     magenta: '#800080'
     cyan: '#008080'
     white: '#ffffff'
+
+shell:
+  program: /bin/bash
+  args:
+    - -l
+    - -c
+    - 'tmux attach || tmux'
+    - 'source /home/user/.profile'
 
 live_config_reload: true

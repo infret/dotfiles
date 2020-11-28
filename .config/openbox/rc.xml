@@ -19,14 +19,9 @@
       </finalactions>
     </action>
   </keybind>
-	<keybind key="A-t">
+  <keybind key="Super_L">
     <action name="Execute">
-      <command>alacritty</command>
-    </action>
-  </keybind>
-	<keybind key="A-e">
-    <action name="Execute">
-			<command>code</command>
+	<command>alacritty</command>
     </action>
   </keybind>
   <keybind key="A-w">
@@ -54,21 +49,19 @@
       <command>amixer set Master toggle</command>
     </action>
   </keybind>
-
   <keybind key="A-Right">
     <action name="GrowToEdgeEast"/>
   </keybind>
   <keybind key="A-Left">
     <action name="GrowToEdgeWest"/>
   </keybind>
-  
 </keyboard>
 
 <applications>	
   <application name="*">
     <decor>no</decor>
     <maximized>vertical</maximized>
-	</application>
+  </application>
 </applications>
 
 </openbox_config>
