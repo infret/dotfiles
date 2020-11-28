@@ -16,5 +16,6 @@
 	"prettier.singleQuote": true,
 	"window.zoomLevel": 0,
 	"javascript.updateImportsOnFileMove.enabled": "always",
-	"editor.wordWrap": "on"
+	"editor.wordWrap": "on",
+	"workbench.editor.enablePreview": false
 }
