@@ -29,6 +29,11 @@
       <command>chromium</command>
     </action>
   </keybind>
+  <keybind key="A-e">
+    <action name="Execute">
+      <command>code</command>
+    </action>
+  </keybind>
   <keybind key="Print">
     <action name="Execute">
       <command>scrot -s</command>

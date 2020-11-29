@@ -11,5 +11,6 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 PS1="\[\e[35m\]\w\[\e[m\]\[\e[35m\] >\[\e[m\] "
 PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
+LC_ALL=en_US.UTF-8
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx /usr/bin/openbox-session
