@@ -1,5 +1,3 @@
-[[ $- != *i* ]] && return
-
 alias ..='cd ..'
 alias ls='ls -aCF --color=auto'
 alias rm='rm -r'
@@ -9,8 +7,14 @@ alias myip='curl ipv4.icanhazip.com'
 alias grep='grep --color=auto'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-PS1="\[\e[35m\]\w\[\e[m\]\[\e[35m\] >\[\e[m\] "
-PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
-LC_ALL=en_US.UTF-8
+set fish_greeting
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx /usr/bin/openbox-session
+function fish_prompt
+    printf '%s%s%s%s > ' (set_color '#790079') (prompt_pwd)
+end
+
+if status is-login
+    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+        exec startx /usr/bin/openbox-session -- -keeptty
+    end
+end
