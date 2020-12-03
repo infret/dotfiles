@@ -17,5 +17,8 @@
 	"window.zoomLevel": 0,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"editor.wordWrap": "on",
-	"workbench.editor.enablePreview": false
+	"workbench.editor.enablePreview": false,
+	"prettier.jsxSingleQuote": true,
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single"
 }
