@@ -1,4 +1,3 @@
-picom -CGb
 xfce4-panel &
-hsetroot -solid '#ffffff'
+xsetroot -solid '#ffffff'
 setxkbmap -layout us,ru -option grp:caps_toggle

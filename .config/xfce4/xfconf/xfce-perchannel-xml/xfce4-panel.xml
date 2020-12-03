@@ -19,14 +19,14 @@
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
-        <value type="double" value="0.750000"/>
-        <value type="double" value="0.250000"/>
-        <value type="double" value="0.250000"/>
-        <value type="double" value="0.000000"/>
+        <value type="double" value="1.000000"/>
+        <value type="double" value="1.000000"/>
+        <value type="double" value="1.000000"/>
+        <value type="double" value="1.000000"/>
       </property>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
     </property>
   </property>
   <property name="plugins" type="empty">
