@@ -65,7 +65,6 @@
 <applications>	
   <application name="*">
     <decor>no</decor>
-    <maximized>vertical</maximized>
   </application>
 </applications>
 
