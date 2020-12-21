@@ -36,7 +36,8 @@
   </keybind>
   <keybind key="Print">
     <action name="Execute">
-      <command>scrot -s</command>
+      <command>scrot -se 'xclip -selection clipboard -target image/png -i $f'
+</command>
     </action>
   </keybind>
   <keybind key="XF86AudioRaiseVolume">
