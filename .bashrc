@@ -6,6 +6,7 @@ alias free='free -mt'
 alias myip='curl ipv4.icanhazip.com'
 alias grep='grep --color=auto'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias acpi='cat /sys/class/power_supply/BAT0/capacity'
 
 PS1="\[\e[35m\]\w\[\e[m\]\[\e[35m\] >\[\e[m\] "
 PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
