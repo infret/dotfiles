@@ -10,7 +10,6 @@
   </CssCodeStyleSettings>
   <HTMLCodeStyleSettings>
     <option name="HTML_ATTRIBUTE_WRAP" value="0" />
-    <option name="HTML_TEXT_WRAP" value="0" />
     <option name="HTML_QUOTE_STYLE" value="Single" />
   </HTMLCodeStyleSettings>
   <JSCodeStyleSettings version="0">
@@ -27,6 +26,9 @@
     <option name="USE_DOUBLE_QUOTES" value="false" />
     <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
   </TypeScriptCodeStyleSettings>
+  <XML>
+    <option name="XML_ATTRIBUTE_WRAP" value="0" />
+  </XML>
   <codeStyleSettings language="HTML">
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
