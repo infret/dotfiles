@@ -55,11 +55,18 @@
       <command>amixer set Master toggle</command>
     </action>
   </keybind>
+  <keybind key="A-Up">
+    <action name="ToggleMaximize"/>
+  </keybind>
   <keybind key="A-Right">
-    <action name="GrowToEdgeEast"/>
+    <action name="ResizeRelative">
+      <right>10</right>
+    </action>
   </keybind>
   <keybind key="A-Left">
-    <action name="GrowToEdgeWest"/>
+    <action name="ResizeRelative">
+      <right>-10</right>
+    </action>
   </keybind>
 </keyboard>
 
