@@ -26,7 +26,7 @@
   </keybind>
   <keybind key="A-w">
     <action name="Execute">
-      <command>chromium</command>
+      <command>firefox</command>
     </action>
   </keybind>
   <keybind key="A-e">
@@ -73,6 +73,26 @@
 <applications>	
   <application name="*">
     <decor>no</decor>
+  </application>
+  <application name="chromium">
+    <position>
+       <x>0</x>
+       <y>0</y>
+    </position>
+    <size>
+      <width>766</width>
+      <height>100%</height>
+    </size>
+  </application>
+  <application name="webstorm">
+    <position>
+       <x>-0</x>
+       <y>0</y>
+    </position>
+    <size>
+      <width>600</width>
+      <height>100%</height>
+    </size>
   </application>
 </applications>
 

@@ -1,3 +1,3 @@
 /home/user/.config/openbox/battery.sh &
-xsetroot -solid '#ffffff'
-setxkbmap -layout us,ru -option grp:win_space_toggle
+setxkbmap -layout us,ru -option grp:alt_shift_toggle
+xrandr --output LVDS1 --mode 1366x768
