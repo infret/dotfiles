@@ -1,0 +1,6 @@
+/* Remove Page Actions Menu */
+#pageActionButton,
+#back-button,
+#forward-button {
+  display: none !important;
+}
