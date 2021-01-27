@@ -1,0 +1,44 @@
+#pageActionButton,
+#back-button,
+#forward-button,
+#page-action-buttons,
+.tab-close-button,
+.closing-tabs-spacer,
+#tracking-protection-icon-container {
+  display: none !important;
+}
+toolbar#TabsToolbar,
+#nav-bar {
+  background-color: #ffffff !important;
+}
+
+#PanelUI-button,
+#urlbar-container {
+  border: none !important;
+  margin-inline: 0 !important;
+  border-radius: 0 !important;
+}
+
+#PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#urlbar-background {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  outline: 1px solid grey !important;
+  width: 100% !important;
+  top: 0 !important;
+  left: -2px !important;
+  padding-block: unset !important;
+  padding-inline: unset !important;
+}
+
+.tab-line,
+.tab-background[selected='true'] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
