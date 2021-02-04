@@ -157,8 +157,10 @@ void win_kill(const Arg arg) {
 void win_center(const Arg arg) {
     if (!cur) return;
 
-    win_size(cur->w, &(int){0}, &(int){0}, &ww, &wh);
-    XMoveWindow(d, cur->w, (sw - ww) / 2, (sh - wh) / 2);
+    //win_size(cur->w, &(int){0}, &(int){0}, &ww, &wh);
+    //XMoveWindow(d, cur->w, (sw - ww) / 2, (sh - wh) / 2);
+    win_size(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
+    XMoveResizeWindow(d, cur->w, 0, 0, sw, sh);
 }
 
 void win_fs(const Arg arg) {
