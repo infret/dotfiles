@@ -3,8 +3,6 @@
 #include <X11/keysym.h>
 #include <X11/XKBlib.h>
 #include <stdlib.h>
-#include <signal.h>
-#include <unistd.h>
 #include "sowm.h"
 
 static client       *list = {0}, *ws_list[10] = {0}, *cur;
@@ -74,7 +72,9 @@ void notify_destroy(XEvent *e) {
 void notify_enter(XEvent *e) {
     while(XCheckTypedEvent(d, EnterNotify, e));
     while(XCheckTypedWindowEvent(d, mouse.subwindow, MotionNotify, e));
-    for win if (c->w == e->xcrossing.window) win_focus(c);
+    for win if (c->w == e->xcrossing.window){
+	    win_focus(c);
+    }
 }
 
 void notify_motion(XEvent *e) {
@@ -157,8 +157,6 @@ void win_kill(const Arg arg) {
 void win_center(const Arg arg) {
     if (!cur) return;
 
-    //win_size(cur->w, &(int){0}, &(int){0}, &ww, &wh);
-    //XMoveWindow(d, cur->w, (sw - ww) / 2, (sh - wh) / 2);
     win_size(cur->w, &cur->wx, &cur->wy, &cur->ww, &cur->wh);
     XMoveResizeWindow(d, cur->w, 0, 0, sw, sh);
 }
@@ -260,7 +258,6 @@ int main(void) {
 
     if (!(d = XOpenDisplay(0))) exit(1);
 
-    signal(SIGCHLD, SIG_IGN);
     XSetErrorHandler(xerror);
 
     root  = RootWindow(d, s);
