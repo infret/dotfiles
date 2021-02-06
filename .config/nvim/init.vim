@@ -19,12 +19,15 @@ set shortmess+=c
 set wildmenu
 set updatetime=300
 set laststatus=0
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Interface changes
 func DisplayFilename(timer)
   exec "echo expand('%:p')"
 endfunc
-let timer = timer_start(3000, 'DisplayFilename', {'repeat': -1})
+let timer = timer_start(5000, 'DisplayFilename', {'repeat': -1})
 hi! EndOfBuffer ctermbg=white ctermfg=white guibg=white guifg=white
 hi VertSplit cterm=NONE
 hi LineNr ctermfg=grey
@@ -38,34 +41,6 @@ nmap <leader>p :Files<CR>
 nmap <leader>r <Plug>(coc-rename)
 nmap <leader>n :NERDTreeToggle<cr>:normal P<cr>:normal O<cr>
 nmap <leader>e <C-w><C-w>
-
-" Terminal
-let g:term_buf = 0
-let g:term_win = 0
-function! TermToggle(height)
-    if win_gotoid(g:term_win)
-        hide
-    else
-        botright new
-        exec "resize " . a:height
-        try
-            exec "buffer " . g:term_buf
-        catch
-            call termopen($SHELL, {"detach": 0})
-            let g:term_buf = bufnr("")
-            set nonumber
-            set norelativenumber
-            set signcolumn=no
-        endtry
-        startinsert!
-        let g:term_win = win_getid()
-    endif
-endfunction
-nnoremap <A-z> :call TermToggle(10)<CR>
-inoremap <A-z> <Esc>:call TermToggle(10)<CR>
-tnoremap <A-z`> <C-\><C-n>:call TermToggle(10)<CR>
-tnoremap <Esc> <C-\><C-n>
-tnoremap :q! <C-\><C-n>:q!<CR>
 
 " Autocompletion
 inoremap <silent><expr> <TAB>
