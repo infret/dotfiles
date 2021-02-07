@@ -17,6 +17,10 @@ toolbar#TabsToolbar,
   background-image: none !important;
 }
 
+.tab-line {
+  border: none !important;
+}
+
 #PanelUI-button,
 #urlbar-container,
 #urlbar-background,

@@ -6,4 +6,3 @@ alias free='free -mt'
 
 export LC_ALL=en_US.UTF-8
 PS1="\[\e[35m\]\w\[\e[m\]\[\e[35m\] >\[\e[m\] "
-PATH=$PATH:~/scripts
