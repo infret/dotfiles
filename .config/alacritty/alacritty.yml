@@ -1,12 +1,12 @@
 env:
-  LC_ALL: "en_US.UTF-8"
+  LC_ALL: 'en_US.UTF-8'
 
 font:
   normal:
-    family: Liberation Mono
+    family: SFMono Nerd Font
     style: Regular
   bold:
-    family: Liberation Mono
+    family: SFMono Nerd Font
     style: Regular
 
   size: 9
