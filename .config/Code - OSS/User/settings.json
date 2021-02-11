@@ -32,5 +32,6 @@
   "github.gitAuthentication": false,
   "explorer.confirmDelete": false,
   "prettier.printWidth": 100,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.hover.enabled": false
 }

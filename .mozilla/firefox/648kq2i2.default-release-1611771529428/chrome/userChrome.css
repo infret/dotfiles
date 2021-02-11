@@ -33,10 +33,6 @@ toolbar#TabsToolbar,
   box-shadow: none !important;
 }
 
-#downloads-button {
-  margin-left: -5px !important;
-}
-
 #PanelUI-button {
   margin-left: 2px !important;
   -moz-box-ordinal-group: 0 !important;
