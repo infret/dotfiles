@@ -1,6 +1,5 @@
 {
   "files.autoSave": "afterDelay",
-  "editor.fontFamily": "'SFMono Nerd Font'",
   "editor.tabSize": 2,
   "window.customMenuBarAltFocus": false,
   "window.menuBarVisibility": "hidden",
