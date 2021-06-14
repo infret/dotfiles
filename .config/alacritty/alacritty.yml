@@ -3,13 +3,13 @@ env:
 
 font:
   normal:
-    family: SFMono Nerd Font
+    family: Roboto Mono
     style: Regular
   bold:
-    family: SFMono Nerd Font
+    family: Roboto Mono
     style: Regular
 
-  size: 9
+  size: 7.5
 
 colors:
   primary:
